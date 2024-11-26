@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto - Samsong</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .bg-dark-custom {
+      background-color: #212529;
+    }
+    .form-label {
+      font-weight: bold;
+    }
+    .btn-primary-interactive {
+      background-color: #0d6efd;
+      border: none;
+      transition: all 0.3s ease;
+    }
+    .btn-primary-interactive:hover {
+      background-color: #0056b3;
+      transform: translateY(-2px);
+      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    }
+    .btn-primary-interactive:active {
+      background-color: #004494;
+      transform: translateY(2px);
+      box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    }
+  </style>
+</head>
+<body class="bg-dark text-white">
+
+  <header class="bg-gray-900 py-4">
+    <div class="container">
+      <a href="/paginas/index.html" class="text-2xl font-bold text-white">
+        Samsong
+      </a>
+    </div>
+  </header>
+  
+  <main class="container py-5">
+    <h1 class="mb-5 text-center text-3xl font-bold">Contacto</h1>
+    <div class="row">
+      <div class="col-md-6">
+        <h2 class="mb-4">Información de Contacto</h2>
+        <p>Teléfono: +54 11 1234-5678</p>
+        <p>Email: info@samsong.com</p>
+        <p>Dirección: Av. Corrientes 1234, Buenos Aires, Argentina</p>
+
+        <h3 class="mt-4">Horario de Atención</h3>
+        <p>Lunes a Viernes: 9:00 - 18:00</p>
+        <p>Sábados: 10:00 - 14:00</p>
+      </div>
+
+      <div class="col-md-6">
+        <form action="#" method="POST" class="p-4 bg-dark-custom rounded-lg">
+          <div class="mb-3">
+            <label for="name" class="form-label">Nombre</label>
+            <input type="text" id="name" name="name" class="form-control bg-dark text-white" required>
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" id="email" name="email" class="form-control bg-dark text-white" required>
+          </div>
+          <div class="mb-3">
+            <label for="subject" class="form-label">Asunto</label>
+            <select id="subject" name="subject" class="form-select bg-dark text-white" required>
+              <option value="" disabled selected>Selecciona un asunto</option>
+              <option value="consulta">Consulta General</option>
+              <option value="soporte">Soporte Técnico</option>
+              <option value="ventas">Ventas</option>
+              <option value="reclamo">Reclamo</option>
+            </select>
+          </div>
+          <div class="mb-3">
+            <label for="message" class="form-label">Mensaje</label>
+            <textarea id="message" name="message" class="form-control bg-dark text-white" rows="5" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary-interactive w-100">
+            <i class="bi bi-send me-2"></i> Enviar Mensaje
+          </button>
+        </form>
+      </div>
+    </div>
+  </main>
+  <footer class="bg-dark text-center text-white py-3 mt-5">
+    <p class="mb-0">Samsong se ahorra los derechos de admisión 2024</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
